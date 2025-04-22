@@ -1,0 +1,268 @@
+*{
+    padding: 0%;
+    margin: 0;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+}
+
+.navbar h1{
+    color:#650304;
+    font-size: 25px;
+}
+.navbarlinks{
+    display: flex;
+    column-gap: 20px;
+}
+.navbarlinks a{
+    text-decoration: none;
+    color:#650304;
+}
+.navbarlinks a:hover{
+    text-decoration: underline;
+    color:#650304;
+}
+.navbarlinkstap{
+    display: none;
+}
+
+/*side navbar*/
+.sidenavbar{
+    background-color: #650304;
+    width: 30%;
+    height: 100%;
+    position: fixed;
+    left: -60%;
+    padding: 20px;
+    color: white;
+    transition: 2s;
+}
+
+.side-navbarlinks{
+    margin-bottom: 30px;
+}
+.side-navbarlinks a{
+    color: white;
+    text-decoration: none;
+}
+.side-navbarlinks a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+    color: #650304;
+}
+.headerbuttom{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 10px;
+    background-color: #650304;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 30px;
+}
+
+.service{
+    padding: 20px;
+}
+
+.service-container1{
+    display: flex;
+    justify-content:space-between;
+}
+.service-container2{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-top: 5px;
+}
+.service-container2 div{
+    background-color: #f2f4f7;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+}
+.dish{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.dish-box{
+    position: relative;
+    flex-basis: 30%;
+    margin: 10px;
+}
+.dish-box button{
+    background-color: #650304;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    border: none;
+    margin-top: 10px;
+    border-radius: 10px;
+    position: absolute;
+    top: 65%;
+    left: 17%;
+}
+
+/*membership*/
+.membership{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.membership input{
+    padding: 10px;
+    width: 60vw;
+    margin-bottom: 10px;
+    border: solid black 2px;
+    border-radius: 50px;
+}
+.membership button{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #650304;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+.footer{
+    padding: 40px;
+    margin-top: 20px;
+    background-color: #650304;
+    color: white;
+}
+
+
+
+/*searcher*/
+.searcher{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    width: 80%;
+    border: solid black 2px;
+    border-radius: 50px;
+    align-items: center;
+    margin: auto;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+.searcherdiv{
+    margin-top: 20px;
+}
+.searcher input{
+    background-color: transparent;
+    border: none;
+    width: 100%;
+}
+.searcher input:focus{
+    outline: none;
+}
+
+/*dish's*/
+
+.dishs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+.dishbox{
+    flex-basis:20%;
+    margin: 20px;
+    text-align: center;
+}
+.dishbox h3{
+    color: #650304;
+}
+
+/*contact*/
+.contact-form-div{
+    background-color: #f2f4f7;
+    width: 40%;
+    height: 50%;
+    top: 50px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 25%;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.contact-form-div input{
+    width: 100%;
+    padding: 7px;
+    margin: 10px;
+    background: white;
+    border: none;
+    border-bottom: solid #650304 3px;
+    border-radius: 5px;
+}
+
+.contact-form-div input:focus{
+    outline: none;
+}
+
+.contact-form-div textarea{
+    width: 100%;
+    padding: 7px;
+    margin: 10px;
+}
+.contact-form-div textarea:focus{
+    outline: none;
+}
+#submit{
+    background-color: #650304;
+    color: white;
+    width: 35%;
+    border: none;
+    border-radius: 20px;
+}
+
+
+
+/*media quary*/
+@media screen and (max-width:700px) {
+    .headerimg{
+        display: none;
+    }
+    .navbarlinkstap{
+        display: block;
+    }
+    .navbarlinks{
+        display: none;
+    }
+    .headerimg{
+        display: none;
+    }
+    .service-container1{
+        display: none;
+    }
+    .service-container2{
+        flex-direction: column;
+    }
+}

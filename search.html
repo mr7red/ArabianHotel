@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arabian Restaurent</title>
+    <!--anand css-->
+    <link rel="stylesheet" href="anand.css">
+
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!--font awesome icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <!--navbar-->
+    <nav class="navbar">
+        <h1>Arabian Hotel</h1>
+
+        <div class="navbarlinks">
+            <p class="navbarlinks"><a href="C:\Users\ADMIN\Pictures\Anand\java script\1904\anand.html">Home</a></p>
+            <p class="navbarlinks"><a href="C:\Users\ADMIN\Pictures\Anand\java script\1904\search.html">Manu</a></p>
+            <p class="navbarlinks"><a href="C:\Users\ADMIN\Pictures\Anand\java script\1904\contact.html">Contact</a></p>
+        </div>
+        <div class="navbarlinkstap" onclick="shownavbar()"><i class="fa-solid fa-bars"></i></div>
+    </nav>
+
+    <!--side navbar-->
+    <div class="sidenavbar">
+        <p style="text-align: end;" onclick="closenavbar()"><i class="fa-solid fa-xmark"></i></p>
+        <div class="side-navbarlinks">
+            <p class="side-navbarlinks"><a href="C:\Users\ADMIN\Pictures\Anand\java script\1904\anand.html">Home</a></p>
+            <p class="side-navbarlinks"><a href="C:\Users\ADMIN\Pictures\Anand\java script\1904\search.html">Manu</a></p>
+            <p class="side-navbarlinks"><a href="C:\Users\ADMIN\Pictures\Anand\java script\1904\contact.html">Contact</a></p>
+        </div>
+    </div>
+
+    <!--search-->
+    <div class="searcherdiv">
+        <form class="searcher">
+            <input type="text" id="searching" placeholder="search" >| 
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </form>
+    </div>
+
+        <!--dishes-->
+        <div>
+            <h2 style="padding: 20px;color: #650304;">Hotel Dish's</h2>
+            <div class="dishs" id="dishboxpage">
+                <div class="dishbox">
+                    <img src="pexels-aboodi-18698261.jpg" width="250px" >
+                    <h3>Chicken Tikka</h3>
+                </div>
+                <div class="dishbox">
+                    <img src="pexels-aboodi-18698262.jpg" width="250px" >
+                    <h3>Chicken 65</h3>
+                </div>
+                <div class="dishbox">
+                    <img src="pexels-aboodi-18698263.jpg" width="250px" >
+                    <h3>Chicken Noodules</h3>
+                </div>
+                <div class="dishbox">
+                    <img src="pexels-peps-silvestro-180443212-12129480.jpg" width="250px" >
+                    <h3>Chicken Burger</h3>
+                </div>
+                <div class="dishbox">
+                    <img src="pexels-rajdeepcraft-17119248-6416559.jpg" width="250px">
+                    <h3>Chicken Sanwidch</h3>
+                </div>
+                <div class="dishbox">
+                    <img src="pexels-aboodi-18698232.jpg" width="250px">
+                    <h3>Beef Biriyani</h3>
+                </div>
+                <div class="dishbox">
+                    <img src="pexels-nishantaneja-2955819.jpg" width="250px">
+                    <h3>Burrito</h3>
+                </div>
+                <div class="dishbox">
+                    <img src="pexels-kunal-lakhotia-781256899-28674543.jpg" width="250px">
+                    <h3>Chinese Gobi Manchurian Dish</h3>
+                </div>
+                <div class="dishbox">
+                    <img src="pexels-razaneadra-13304044.jpg" width="250px">
+                    <h3>Grilled Meat on Brown Ceramic Plate</h3>
+                </div>
+            </div>
+        </div>
+
+    <!--footer-->
+    <div class="footer">
+        <h2>Contact</h2>
+        <div>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+        </div>
+        <p>@ 2025 ArabianHotel.com</p>
+    </div>
+
+
+    <script src="searcher.js"></script>
+</body>
+</html>
